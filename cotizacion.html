@@ -1,0 +1,175 @@
+<html>
+  <head>
+    <title>Cotización</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <script language="javascript">
+      function suma() {
+        var s = 0;
+        for (i = 0; i < 3; i++)
+          if (document.form1.checkbox[i].checked)
+            s += parseInt(document.getElementById("txtFld" + (i + 1)).value);
+        return s;
+      }
+    </script>
+  </head>
+
+  <body>
+    <body style="background-color: rgb(166, 154, 154)"></body>
+
+    <h1>Trabaja conmigo</h1>
+
+    <form name="form1" method="post" action="">
+      <p>
+        Codigo base
+        <br />
+        <br />
+        <input
+          name="checkbox"
+          type="checkbox"
+          onClick="document.getElementById('txtFld1').value=this.checked?this.value:'8000'"
+          value="8000"
+        />
+        <input type="text" id="txtFld1" />
+      </p>
+      <p>
+        Consultas tecnicas
+        <br />
+        <br />
+        <input
+          name="checkbox"
+          type="checkbox"
+          onClick="document.getElementById('txtFld2').value=this.checked?this.value:'3000'"
+          value="3000"
+        />
+        <input type="text" id="txtFld2" />
+      </p>
+      <p>
+        Ilustraciones extra
+        <br />
+        <br />
+        <input
+          name="checkbox"
+          type="checkbox"
+          onClick="document.getElementById('txtFld3').value=this.checked?this.value:'1000'"
+          value="1000"
+        />
+        <input type="text" id="txtFld3" />
+      </p>
+
+      <p>
+        Estos precios ya incluyen IVA
+        <br />
+        <br />
+      </p>
+
+      <p>
+        <input
+          name=""
+          type="button"
+          onClick="document.getElementById('txtFld4').value=suma()"
+          value="Cotizacion"
+        />
+      </p>
+
+      <p>
+        <input type="text" id="txtFld4" />
+      </p>
+
+      <div class="heading">
+
+        <h1>Contacto</h1>
+    
+        <span>Esperamos sea de su agrado.</span>
+    
+    </div>
+    
+    <div class="cd-half-width fivth-slide">
+    
+        <div class="container">
+    
+          <div class="row">
+    
+            <div class="col-md-12">
+    
+              <div class="content fivth-content">
+    
+                <div class="row">
+    
+                  <div class="col-md-4">
+    
+                    <div class="left-info">
+    
+                      <p> Favor de dejar sus datos .
+    
+                      <br><br>
+    
+                      <em><br>CEL: 6691881493<br> Correo: rodrigosm95outlook.com   </em>
+    
+                      </p>
+    
+                      <ul class="social-icons">
+    
+                        <i><a href="#"><i class="fa fa-facebook"></i></a></i>
+    
+                        <i><a href="#"><i class="fa fa-twitter"></i></a></i>
+    
+                        <i><a href="#"><i class="fa fa-linkedin"></i></a></i>
+    
+                        <i><a href="#"><i class="fa fa-rss"></i></a></i>
+    
+                        <i><a href="#"><i class="fa fa-behance"></i></a></i>
+    
+                      </ul>
+    
+                    </div>
+    
+                  </div>
+    
+                  <div class="col-md-8">
+    
+                    <div class="row">
+    
+                      <form id="contact" action="" method="post">
+    
+                        <div class="col-md-6">
+    
+                          <fieldset>
+    
+                            <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+    
+                          </fieldset>
+    
+                        </div>
+    
+                        <div class="col-md-6">
+    
+                          <fieldset>
+    
+                            <input name="email" type="email" class="form-control" id="email" placeholder="Email" required="">
+    
+                          </fieldset>
+    
+                        </div>
+    
+                        <div class="col-md-12">
+    
+                          <fieldset>
+    
+                            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message" required=""></textarea>
+    
+                          </fieldset>
+    
+                        </div>
+    
+                        <div class="col-md-12">
+    
+                          <fieldset>
+    
+                            <button type="submit" id="form-submit" class="btn">Send Message</button>
+    
+                          </fieldset>
+    
+                        </div>
+    </form>
+  </body>
+</html>

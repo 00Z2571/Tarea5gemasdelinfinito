@@ -1,2 +1,2 @@
-# Tarea5gemasdelinfinito
-quinta gema
+# Tarea-gemasdelinfinito
+Tarea HTML/CSS/BOOTSTRAP
